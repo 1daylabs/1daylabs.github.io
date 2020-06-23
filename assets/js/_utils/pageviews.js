@@ -94,8 +94,8 @@ var getInitStatus = (function() {
 
 var PvCache = (function() {
   const KEY_PV = "pv";
-  const KEY_CREATION = "pv-created-date";
-  const KEY_PV_TYPE = "pv-type";
+  const KEY_CREATION = "pv_created_date";
+  const KEY_PV_TYPE = "pv_type";
 
   var PvType = {
     ORIGIN: "origin",

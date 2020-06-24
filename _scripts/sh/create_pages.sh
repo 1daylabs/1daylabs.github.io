@@ -59,8 +59,8 @@ init() {
 
 create_category() {
   local _name=$1
-  local _filepath="categories/$(echo $_name | sed 's/ /-/g' | awk '{print tolower($0)}').html"
-
+  local _filepath="categories/$(echo $_name | sed 's/ /-/g' | awk '{print tolower($0)}'|  sed 's/\r$//'
+).html"
   if [[ ! -f $_filepath ]]; then
     echo "---" > $_filepath
     echo "layout: category" >> $_filepath
@@ -75,7 +75,8 @@ create_category() {
 
 create_tag() {
   local _name=$1
-  local _filepath="tags/$( echo $_name | sed "s/ /-/g;s/'//g" | awk '{print tolower($0)}' ).html"
+  local _filepath="tags/$( echo $_name | sed "s/ /-/g;s/'//g" | awk '{print tolower($0)}' |   sed 's/\r$//'
+).html"
 
   if [[ ! -f $_filepath ]]; then
 

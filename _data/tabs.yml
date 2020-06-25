@@ -34,3 +34,8 @@
   url: contact
   icon: "fas fa-archive"
 -
+  name: "Team"
+  path: tabs
+  url: team
+  icon: "fas fa-archive"
+-

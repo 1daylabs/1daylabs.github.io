@@ -19,12 +19,18 @@
   path: tabs
   url: tags
 -
-  name: "Archives"
+  name: "Hall of Fame"
   path: tabs
-  url: archives
+  url: hof
   icon: "fas fa-archive"
 -
   name: "About"
   icon: "fas fa-info"
   path: tabs
   url: about
+-
+  name: "Contact Us"
+  path: tabs
+  url: contact
+  icon: "fas fa-archive"
+-

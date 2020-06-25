@@ -15,3 +15,9 @@ Gemfile.lock
 
 # bundle cache
 vendor
+
+#gulpfile
+gulpfile.js
+
+#protected folder
+_protected/

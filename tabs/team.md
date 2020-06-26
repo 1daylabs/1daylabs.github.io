@@ -6,5 +6,5 @@ title: Team
 # © 2017-2019 Cotes Chung
 # MIT License
 ---
-
-> **Note**: Add Markdown syntax content to file `tabs/team.md` and it will show up on this page.
+  
+  {% include carousel.html height="50" unit="%" duration="7" %}

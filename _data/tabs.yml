@@ -3,8 +3,6 @@
 #  https://github.com/cotes2020/jekyll-theme-chirpy
 #  © 2020 Cotes Chung
 #  MIT Licensed
-
-
 -
   name: Home
   icon: "fas fa-home"
@@ -38,4 +36,3 @@
   path: tabs
   url: team
   icon: "fas fa-archive"
--

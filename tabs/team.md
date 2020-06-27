@@ -7,4 +7,4 @@ title: Team
 # MIT License
 ---
   
-  {% include carousel.html height="50" unit="%" duration="7" %}
+  {% include carousel.html height="60" unit="%" duration="7" %}

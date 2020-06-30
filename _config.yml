@@ -13,9 +13,11 @@ title: 1daylabs                          # the main title
 tagline: Infosec blog  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  1DayLabs is an open-source information platform, which will provide the research area and 
+  variety of content related to IT-security. Rather than trawling through the internet, you
+  can quickly find most of the security-related stuff from Our site, 1daylabs will give you
+  in-depth coverage of current as well as future trends and how it is shaping our cyber world.
+
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: 'https://1daylabs.github.io'
@@ -28,15 +30,15 @@ github:
   username: 1daylabs             # change to your github username
 
 twitter:
-  username: twitter_username            # change to your twitter username
+  username: day_labs            # change to your twitter username
 
 social:
   name: 1daylabs                  # it will shows as the copyright owner in Footer
   email: 1daylabs@protonmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/day_labs      # change to your twitter homepage
+    - https://github.com/1daylabs       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username

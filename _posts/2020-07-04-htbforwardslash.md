@@ -44,23 +44,23 @@ $ wfuzz — hh 0 -H ‘Host: FUZZ.forwardslash.htb’ -u http://10.10.10.183
 –hc = for hiding result which have response 400
 -c = for making the result 
 ```
-![img3]({{ "/assets/img/Posts/HTBforwardslash/3.PNG" | relative_url }})
+![img3]({{ "/assets/img/Posts/HTBforwardslash/3.png" | relative_url }})
 
 After getting a new subdomain add it to /etc/hosts file “backup.forwardslash.htb”. Now enumerating the new domain we get a login page. 
 
-![img4]({{ "/assets/img/Posts/HTBforwardslash/4.PNG" | relative_url }})
+![img4]({{ "/assets/img/Posts/HTBforwardslash/4.png" | relative_url }})
 
 By signing in as a new user we could get the dashboard. After observing the functionality we saw that we could upload an image by url. It gave me a strike of LFI (Local File Inclusion) vulnerability. But we need to enable the tabs for entering the data into the url text box and also enable the submit button.
 
-![img5]({{ "/assets/img/Posts/HTBforwardslash/5.PNG" | relative_url }})
+![img5]({{ "/assets/img/Posts/HTBforwardslash/5.png" | relative_url }})
 
 Trying with some common payloads extracting the “file:///etc/passwd” . 
 
-![img6]({{ "/assets/img/Posts/HTBforwardslash/6.PNG" | relative_url }})
+![img6]({{ "/assets/img/Posts/HTBforwardslash/6.png" | relative_url }})
 
 As enumerating the directories we saw /dev/ directory. But we got permission denied while extracting the content from the file.
 
-![img7]({{ "/assets/img/Posts/HTBforwardslash/7.PNG" | relative_url }})
+![img7]({{ "/assets/img/Posts/HTBforwardslash/7.png" | relative_url }})
 
 ## Exploitation
 
@@ -70,45 +70,45 @@ Now we could exploit the vulnerability by including a PHP file through PHP wrapp
 
 We get the index.PHP file in base64 encoded. After decoding the data we get the credentials of FTP login. But since there is no Ftp-port open lets try logging into SSH. 
 
-![img8]({{ "/assets/img/Posts/HTBforwardslash/8.PNG" | relative_url }})
+![img8]({{ "/assets/img/Posts/HTBforwardslash/8.png" | relative_url }})
 
 ```console
 $ ssh chiv@10.10.10.183
 ```
-![img9]({{ "/assets/img/Posts/HTBforwardslash/9.PNG" | relative_url }})
-![img10]({{ "/assets/img/Posts/HTBforwardslash/10.PNG" | relative_url }})
-![img11]({{ "/assets/img/Posts/HTBforwardslash/11.PNG" | relative_url }})
+![img9]({{ "/assets/img/Posts/HTBforwardslash/9.png" | relative_url }})
+![img10]({{ "/assets/img/Posts/HTBforwardslash/10.png" | relative_url }})
+![img11]({{ "/assets/img/Posts/HTBforwardslash/11.png" | relative_url }})
 
 
 After getting the shell let's execute the LinuxPrivEsc commands and scripts for post-exploitation. After running the LinEnum script and looking at the results I found a SUID binary owned by pain user and one more interesting thing there is a file called config.PHP.bak which is also owned by user pain. But don’t have permission to r/w/x.
 
-![img12]({{ "/assets/img/Posts/HTBforwardslash/12.PNG" | relative_url }})
-![img13]({{ "/assets/img/Posts/HTBforwardslash/13.PNG" | relative_url }})
+![img12]({{ "/assets/img/Posts/HTBforwardslash/12.png" | relative_url }})
+![img13]({{ "/assets/img/Posts/HTBforwardslash/13.png" | relative_url }})
 
 After observing the output of the backup file we got to know that it is generating a different hash every time. Observing the text in the output as it says “time based backup viewer” it may be the md5sum that is being generated it’s of the current timestamp including seconds that's why it's changing whenever you run it again. Here I made a bash script just for checking the md5 value if it will be the same.
 
-![img14]({{ "/assets/img/Posts/HTBforwardslash/14.PNG" | relative_url }})
+![img14]({{ "/assets/img/Posts/HTBforwardslash/14.png" | relative_url }})
 
 This will create a timestamp of the current time and convert it to md5 . And then it will link the config.PHP.bak file with the time variable and then run the backup binary.This will show us the content of the config.PHP.bak file.
 
-![img15]({{ "/assets/img/Posts/HTBforwardslash/15.PNG" | relative_url }})
+![img15]({{ "/assets/img/Posts/HTBforwardslash/15.png" | relative_url }})
 
 Great, we got the password of a pain user. Now let's move on to post exploitation.
 
 ## Post Exploitation
 
 Firstly lets see what all are our rights and could perform as a root.
-![img16]({{ "/assets/img/Posts/HTBforwardslash/16.PNG" | relative_url }})
+![img16]({{ "/assets/img/Posts/HTBforwardslash/16.png" | relative_url }})
 
 Cryptsetup is used to map the images generally of backup images.And then we can mount the mapped images to any directory and access the files in it.
 
 As we saw that there is an encryptorinator directory which encrypts the cipher text given . After analyzing the code I made some changes in it , here. To look for common words in the decrypted message and if we have then that’s our key to get the message.
 
-![img17]({{ "/assets/img/Posts/HTBforwardslash/17.PNG" | relative_url }})
+![img17]({{ "/assets/img/Posts/HTBforwardslash/17.png" | relative_url }})
 
 After running the decrypt.py file it gave me the key and the password.
 
-![img18]({{ "/assets/img/Posts/HTBforwardslash/18.PNG" | relative_url }})
+![img18]({{ "/assets/img/Posts/HTBforwardslash/18.png" | relative_url }})
 
 Now we could map the image in /var/backups/recovery. 
 Entering the password “cB!6%sdH8Lj^@Y*$C2cf”
@@ -116,13 +116,13 @@ Entering the password “cB!6%sdH8Lj^@Y*$C2cf”
 ```console
 $ sudo /sbin/cryptsetup luksOpen /var/backups/recovery/encrypted_backup.img backup
 ```
-![img19]({{ "/assets/img/Posts/HTBforwardslash/19.PNG" | relative_url }})
+![img19]({{ "/assets/img/Posts/HTBforwardslash/19.png" | relative_url }})
 
 After checking into /dev/mapper for the mapped images. Now that it has been created we can mount the images into the /mnt directory.That gives us the private key for the root.
-![img20]({{ "/assets/img/Posts/HTBforwardslash/20.PNG" | relative_url }})
+![img20]({{ "/assets/img/Posts/HTBforwardslash/20.png" | relative_url }})
 
 Let’s login as root and fetch the root.txt file.
-![img21]({{ "/assets/img/Posts/HTBforwardslash/21.PNG" | relative_url }})
+![img21]({{ "/assets/img/Posts/HTBforwardslash/21.png" | relative_url }})
 
 
 ### References
@@ -143,4 +143,4 @@ Cryptography is the art of communication between two users via coded messages. T
 **By Swar Shah**
 <br>
 
-![img22]({{ "/assets/img/Posts/HTBforwardslash/22.PNG" | relative_url }})
+![img22]({{ "/assets/img/Posts/HTBforwardslash/22.png" | relative_url }})

@@ -141,3 +141,6 @@ Cryptography is the art of communication between two users via coded messages. T
 
 
 **By Swar Shah**
+<br>
+
+![img22]({{ "/assets/img/Posts/HTBforwardslash/22.PNG" | relative_url }})

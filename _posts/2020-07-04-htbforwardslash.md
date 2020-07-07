@@ -4,6 +4,9 @@ date: 2020-07-04 12:00:00 +0530
 categories: [HACKTHEBOX, Retired]
 tags: [htb]     # TAG names should always be lowercase
 ---
+
+
+
 ![Intro]({{ "/assets/img/Posts/HTBforwardslash/1.PNG" | relative_url }})
 
 >We would be exploiting the forwardslash box from hackthebox. The box comprises some enumeration for subdomain and then we would exploit it by Local File Inclusion vulnerability and then by getting shell we would go for post exploitation to gain the root shell. 

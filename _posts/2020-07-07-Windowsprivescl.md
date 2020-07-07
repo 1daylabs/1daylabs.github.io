@@ -4,7 +4,6 @@ date: 2020-07-07 00:00:00 +0530
 categories: [Privilege Escalation, Windows]
 tags: [privesc,windows,checklist]     # TAG names should always be lowercase
 ---
-# Windows Priv Esc Check-List
 > *“It always seems impossible until it’s done.” - Nelson Mandela*
 
 Download the PDF at the bottom of the page. Download and start marking check for your next windows privilege escalation phase. ;)
@@ -13,4 +12,4 @@ Download the PDF at the bottom of the page. Download and start marking check for
 
 Author - Bhashit Pandya
 
-[](https://twitter.com/x30r_)
+Twitter handle : [@x30r_](https://twitter.com/x30r_)

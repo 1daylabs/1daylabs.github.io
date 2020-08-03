@@ -2,7 +2,7 @@
 ## Introduction:
 
 Injection attacks have been in limelight since the initial days of the internet.
-Let us dive into the specific type of injection, process injection which is hopefully going to be a multi part series.
+Let us dive into the specific type of injection, process injection which is going to be a multi part series.
 
 Now, you must be wondering, what exactly is a process?
 
@@ -24,7 +24,7 @@ If implemented correctly, User can inject their code inside the game to find out
 
 ## How?
 
-In possibly a series of articles on Process injection and code injection, I will try to demonstrate Process Injection on GNU/Linux as well as Microsoft Windows platforms
+In a series of articles on Process injection and code injection, I will try to demonstrate Process Injection on GNU/Linux as well as Microsoft Windows platforms
 
 ## Debuggers:
 

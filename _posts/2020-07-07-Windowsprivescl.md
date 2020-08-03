@@ -8,7 +8,7 @@ tags: [privesc,windows,checklist]     # TAG names should always be lowercase
 
 Download the PDF at the bottom of the page. Download and start marking check for your next windows privilege escalation phase. ;)
 
-[Check-List](https://www.notion.so/26f8a6317dfd473e839305a40a192d11)
+[Check-List](https://www.notion.so/Windows-Priv-Esc-Check-List-7635a8d71b124b3389bc115990ebe674)
 
 Author - Bhashit Pandya
 

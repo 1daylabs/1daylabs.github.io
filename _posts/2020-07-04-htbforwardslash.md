@@ -2,7 +2,8 @@
 title: "Hackthebox Forwardslash Writeup"
 date: 2020-07-04 12:00:00 +0530
 categories: [HACKTHEBOX, Retired]
-tags: [htb]     # TAG names should always be lowercase
+tags: [htb]   
+image: "assets/img/Posts/HTBforwardslash/1.PNG"
 ---
 
 

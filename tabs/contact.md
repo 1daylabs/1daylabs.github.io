@@ -20,12 +20,11 @@ title: Contact
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input  type="text" name="subject" class="form-control" style="width:50%" id="subject" placeholder="Enter your name" required="required">
+            <input  type="text" name="subject" class="form-control" style="width:50%" id="subject" placeholder="Enter subject" required="required">
           </div>
           <div class="form-group">
           <label for="message">Message</label>
-           <textarea id="message" class="form-control" name="message" rows="5" required="required" maxlength="5000">
-            Enter here...
+           <textarea id="message" class="form-control" placeholder="Enter here..."  name="message" rows="5" required="required" maxlength="5000">
            </textarea>
           </div>
           <hr>

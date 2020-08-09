@@ -2,7 +2,8 @@
 title: "Windows Priv Esc Check-List"
 date: 2020-07-07 00:00:00 +0530
 categories: [Privilege Escalation, Windows]
-tags: [privesc,windows,checklist]     # TAG names should always be lowercase
+tags: [privesc,windows,checklist] 
+image: "assets/img/Posts/windowsprivesc/thumb.png"
 ---
 > *“It always seems impossible until it’s done.” - Nelson Mandela*
 

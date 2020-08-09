@@ -3,10 +3,10 @@ title: "Linux Process Injection"
 date: 2020-08-03 00:00:00 +0530
 categories: [Red Team Operations]
 tags: [Malware Development, Red Team,Av Evasion, Process injection, Linux, Ptrace]
-image: "assets/img/Posts/Linuxprocessinjection/1.jpg"
+image: "assets/img/Posts/Linuxprocessinjection/thumb.png"
 ---
 
-![img1]({{ "/assets/img/Posts/Linuxprocessinjection/1.jpg" | relative_url }})
+![img1]({{ "/assets/img/Posts/Linuxprocessinjection/thumb.png" | relative_url }})
 ## Introduction:
 
 Injection attacks have been in limelight since the initial days of the internet.

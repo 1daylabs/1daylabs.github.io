@@ -7,8 +7,7 @@ image: "assets/img/Posts/HTBforwardslash/thumb.jpg"
 ---
 
 
-
-![Intro]({{ "/assets/img/Posts/HTBforwardslash/thumb.jpg" | relative_url }})
+<!-- ![Intro]({{ "/assets/img/Posts/HTBforwardslash/thumb.jpg" | relative_url }}) -->
 
 >We would be exploiting the forwardslash box from hackthebox. The box comprises some enumeration for subdomain and then we would exploit it by Local File Inclusion vulnerability and then by getting shell we would go for post exploitation to gain the root shell. 
 

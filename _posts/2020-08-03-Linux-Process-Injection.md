@@ -6,7 +6,7 @@ tags: [Malware Development, Red Team,Av Evasion, Process injection, Linux, Ptrac
 image: "assets/img/Posts/Linuxprocessinjection/thumb.png"
 ---
 
-![img1]({{ "/assets/img/Posts/Linuxprocessinjection/thumb.png" | relative_url }})
+  <!-- ![img1]({{ "/assets/img/Posts/Linuxprocessinjection/thumb.png" | relative_url }}) -->
 ## Introduction:
 
 Injection attacks have been in limelight since the initial days of the internet.

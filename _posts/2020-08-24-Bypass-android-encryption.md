@@ -313,5 +313,4 @@ I enjoyed writing this article and hope that you enjoyed reading it.
 Author - Jaimin Gohel
 
 Twitter handle : [@jaimin_gohel](https://twitter.com/jaimin_gohel)
-</br>
-LinkedIn handle : [jaimin-gohel-440a4a52](https://www.linkedin.com/in/jaimin-gohel-440a4a52)
+LinkedIn handle : [@jaimin-gohel-440a4a52](https://www.linkedin.com/in/jaimin-gohel-440a4a52)

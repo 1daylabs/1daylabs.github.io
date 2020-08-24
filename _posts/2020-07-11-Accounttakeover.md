@@ -2,7 +2,8 @@
 title: "Account Takeover"
 date: 2020-07-11 00:00:00 +0530
 categories: [Web]
-tags: [ato,web,bugbounty,authentication,hackerone,otpbypass,account takeover,bug,bounty]     # TAG names should always be lowercase
+tags: [ato,web,bugbounty,authentication,hackerone,otpbypass,account takeover,bug,bounty]  
+image: "assets/img/Posts/acctakeover/thumb.jpeg"
 ---
 <script>
 window.onload = function() {

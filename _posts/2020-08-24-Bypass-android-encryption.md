@@ -302,8 +302,6 @@ I enjoyed writing this article and hope that you enjoyed reading it.
 
 **Happy hacking :-)**
 
-Author: [Jaimin Gohel](https://twitter.com/jaimin_gohel)
-
 
 ## References
 
@@ -315,3 +313,4 @@ Author: [Jaimin Gohel](https://twitter.com/jaimin_gohel)
 Author - Jaimin Gohel
 
 Twitter handle : [@jaimin_gohel](https://twitter.com/jaimin_gohel)
+LinkedIn handle : [jaimin-gohel-440a4a52](https://www.linkedin.com/in/jaimin-gohel-440a4a52)

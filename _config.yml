@@ -30,14 +30,14 @@ github:
   username: 1daylabs             # change to your github username
 
 twitter:
-  username: day_labs            # change to your twitter username
+  username: 1dayLabs            # change to your twitter username
 
 social:
   name: 1daylabs                  # it will shows as the copyright owner in Footer
   email: 1daylabs@protonmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/day_labs      # change to your twitter homepage
+    - https://twitter.com/1dayLabs      # change to your twitter homepage
     - https://github.com/1daylabs       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username

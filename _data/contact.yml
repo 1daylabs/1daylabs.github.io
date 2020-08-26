@@ -7,18 +7,31 @@
 -
   type: github
   icon: 'fab fa-github-alt'
+
 -
   type: twitter
   icon: 'fab fa-twitter'
--
-  type: email
-  icon: 'fas fa-envelope'
-  noblank: true            # open link in current tab
+  url: 'https://www.twitter.com/1dayLabs'
+  noblank: true
+
+            
 -
   type: LinkedIn
   icon: 'fab fa-linkedin'
   url: 'https://www.linkedin.com/company/1day-labs'
   noblank: true 
+
+-
+  type: Facebook
+  icon: 'fab fa-facebook'
+  url: 'https://www.facebook.com/1daylabs'
+  noblank: true
+
+-
+  type: Instagram
+  icon: 'fab fa-instagram'
+  url: 'https://www.instagram.com/1day_labs/'
+  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 # -

@@ -3,12 +3,12 @@ title: "Understanding OAuth from a penetration tester’s perspective — Part 1
 date: 2020-10-02 00:00:00 +0530
 categories: [Authentication]
 tags: [auth,OAuth] 
-image: "assets/img/Posts/windowsprivesc/thumb.png"
+image: "assets/img/Posts/uoauthp1/thumb.png"
 ---
 
 Here, we are going to understand OAuth and related security concerns.
 
-![](https://cdn-images-1.medium.com/max/2000/1*uvBZtaz3DsBtbsz4JCtNGA.png)
+<!-- ![](https://cdn-images-1.medium.com/max/2000/1*uvBZtaz3DsBtbsz4JCtNGA.png) -->
 
 ## Target Audience
 
@@ -181,3 +181,4 @@ Also, just a reminder for myself — we still have the second half of history of
 Till then, think think think… and share your thoughts :)
 > In the next article, we will dive into the technical details of OAuth. This will be much more interesting as you will then be able to guess more confidently about the kind of possible attacks on OAuth.
 
+### By Kadam Parikh

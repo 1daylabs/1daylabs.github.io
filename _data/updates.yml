@@ -1,4 +1,7 @@
 -
+  filename: 'Bypass-android-encryption'
+  lastmod: '2020-08-24 19:09:11 +0530'
+-
   filename: 'Linux-Process-Injection'
   lastmod: '2020-08-12 10:47:53 +0530'
 -
@@ -6,7 +9,10 @@
   lastmod: '2020-08-12 10:47:53 +0530'
 -
   filename: 'vhb-2020-1'
-  lastmod: '2020-08-08 16:14:05 +0530'
+  lastmod: '2020-08-24 17:12:41 +0530'
+-
+  filename: 'Accounttakeover'
+  lastmod: '2020-08-24 17:12:41 +0530'
 -
   filename: 'Windowsprivescl'
   lastmod: '2020-08-09 21:51:05 +0530'

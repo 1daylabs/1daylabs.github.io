@@ -276,3 +276,9 @@ Let’s see working demo of how that’d work
 
 
 <iframe width="600" height="350" src="https://www.youtube.com/embed/U7E2dDPteqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Credits
+
+Credits to 0x00pf on 0x00sec for providing original research which i could build upon
+
+https://0x00sec.org/t/linux-infecting-running-processes/1097
